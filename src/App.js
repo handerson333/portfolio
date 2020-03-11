@@ -9,6 +9,7 @@ import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import resumeData from './resumeData';
 import Blog from './components/Blog';
+import Hike from './components/theHike/Hike';
 class App extends Component {
   render() {
     return (
@@ -26,6 +27,7 @@ class App extends Component {
         )}/>
         
         <Route path="/blog" component={Blog}/>
+        <Route path="/theHike/hike" component={Hike}/>
       </Router>
       
     );

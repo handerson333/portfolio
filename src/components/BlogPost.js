@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 export default class BlogPost extends Component {
   render() {
     return (
@@ -6,9 +7,9 @@ export default class BlogPost extends Component {
       <section id="post">
          <div className="row">
             <div className="nine columns main-col">
-              <h2>{blogData.blogPosts[1].Date}</h2>
+              <h2>{this.props.children}</h2>
               <div className="row">
-                {blogData.blogPosts[1].Text}
+                {this.props.children}
               </div>
             </div>
          </div>
