@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Nav from "../Nav";
+import MyNav from "../MyNav";
 import hikePlanData from "../../hikePlanData";
 import Table from "react-bootstrap/Table";
 import Container from "react-bootstrap/Container";
@@ -10,13 +10,13 @@ export default class Hike extends Component {
   render() {
     return (
       <Container fluid>
-        <Row fluid>
-          <Nav />
-        </Row>
         <Row>
-          <Col xs="3">test iasdasdfdfasdf</Col>
-          {/* <StaticGoogleMap
-              size="200x600"
+          <MyNav />
+        </Row>
+        <Row className="hike-content">
+          <Col xs="6">
+            <StaticGoogleMap
+              size="400x1400"
               apiKey="AIzaSyC-Q30UjGg8_-Kcc-1day5VcfrA0IExGA8"
             >
               <Marker.Group label="Here" color="brown">
@@ -32,9 +32,10 @@ export default class Hike extends Component {
                   "49,-120.7987"
                 ]}
               />
-            </StaticGoogleMap> */}
+            </StaticGoogleMap>
+          </Col>
           <Col xs="3">
-            <Table striped bordered>
+            <Table striped bordered variant="dark">
               <thead>
                 <tr>
                   <th>Section</th>
