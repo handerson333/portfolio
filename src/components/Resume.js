@@ -1,22 +1,23 @@
 import React, { Component } from "react";
+import { Row, Col } from "react-bootstrap";
 export default class Resume extends Component {
   render() {
     let resumeData = this.props.resumeData;
     return (
       <section id="resume">
-        <div className="row education">
-          <div className="three columns header-col">
+        <Row className="education">
+          <Col className="three columns header-col">
             <h1>
               <span>Education</span>
             </h1>
-          </div>
+          </Col>
 
-          <div className="nine columns main-col">
+          <Col className="nine columns main-col">
             {resumeData.education &&
               resumeData.education.map((item, i) => {
                 return (
-                  <div className="row item" key={i}>
-                    <div className="twelve columns">
+                  <Row className="row item" key={i}>
+                    <Col className="twelve columns">
                       <h3>{item.UniversityName}</h3>
                       <p className="info">
                         {item.specialization}
@@ -30,13 +31,13 @@ export default class Resume extends Component {
                           <li key={i}>&bull; {ach}</li>
                         ))}
                       </ul>
-                    </div>
-                  </div>
+                    </Col>
+                  </Row>
                 );
               })}
-          </div>
-        </div>
-        <div className="row work">
+          </Col>
+        </Row>
+        <Row className="row work">
           <div className="three columns header-col">
             <h1>
               <span>Work</span>
@@ -46,7 +47,7 @@ export default class Resume extends Component {
             {resumeData.work &&
               resumeData.work.map((item, i) => {
                 return (
-                  <div className="row item" key={i}>
+                  <Row className="row item" key={i}>
                     <div className="twelve columns">
                       <h3>{item.CompanyName}</h3>
                       <p className="info">
@@ -62,13 +63,13 @@ export default class Resume extends Component {
                         ))}
                       </ul>
                     </div>
-                  </div>
+                  </Row>
                 );
               })}
           </div>
-        </div>
+        </Row>
 
-        <div className="row skill">
+        <Row className="row skill">
           <div className="three columns header-col">
             <h1>
               <span>Skills</span>
@@ -94,7 +95,7 @@ export default class Resume extends Component {
               </ul>
             </div>
           </div>
-        </div>
+        </Row>
       </section>
     );
   }

@@ -21,7 +21,7 @@ let resumeData = {
   ],
   aboutme:
     "I am currently a software engineer on the adventure of a lifetime on the PCT",
-  address: "USA",
+  address: "Portland, OR USA",
   website: "TODOMyWEBSITE",
   education: [
     {

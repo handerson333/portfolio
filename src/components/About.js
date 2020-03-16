@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Row, Col } from "react-bootstrap";
 export default class About extends Component {
   render() {
     let resumeData = this.props.resumeData;
@@ -11,22 +12,22 @@ export default class About extends Component {
     //   , 5000);
     return (
       <section id="about">
-        <div className="row">
-          <div className="three columns">
+        <Row className="about">
+          <Col sm="3" className="profile-pic-wrapper">
             <img
               className="profile-pic"
               id="profile-pic"
               src={"images/profilepics/hayden (" + imgNum + ").jpg"}
               alt="hayden profile pic"
             />
-          </div>
+          </Col>
 
-          <div className="nine columns main-col">
+          <Col sm="4">
             <h2>About Me</h2>
             <p>{resumeData.aboutme}</p>
 
-            <div className="row">
-              <div className="columns contact-details">
+            <Row>
+              <Col>
                 <h2>Contact Details</h2>
                 <p className="address">
                   <span>{resumeData.name}</span>
@@ -35,10 +36,10 @@ export default class About extends Component {
                   {/* <br></br>
                     <span>{resumeData.website}</span> */}
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
       </section>
     );
   }
