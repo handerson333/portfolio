@@ -303,6 +303,8 @@ ul#nav li.current a {
 
 #resume .header-col {
   padding-top: 9px;
+  display: grid;
+  justify-content: right;
 }
 #resume .main-col {
   padding-right: 10%;
@@ -343,14 +345,14 @@ ul#nav li.current a {
   margin-top: 36px;
   list-style: none;
 }
-.bars li {
+.bars .col {
   position: relative;
   margin-bottom: 60px;
   background: #ccc;
-  height: 42px;
+  height: 28px;
   border-radius: 3px;
 }
-.bars li em {
+.bars .col em {
   font: 15px "opensans-bold", sans-serif;
   color: #313131;
   text-transform: uppercase;
@@ -359,49 +361,96 @@ ul#nav li.current a {
   position: relative;
   top: -36px;
 }
+.skills {
+  width: 100%;
+}
 .bar-expand {
   position: absolute;
   left: 0;
   top: 0;
 
   margin: 0;
-  padding-right: 24px;
+  padding-right: 12px;
   background: #313131;
   display: inline-block;
-  height: 42px;
-  line-height: 42px;
+  height: 28px;
+  line-height: 28px;
   border-radius: 3px 0 0 3px;
-}
-
-.photoshop {
-  width: 60%;
-  -moz-animation: photoshop 2s ease;
-  -webkit-animation: photoshop 2s ease;
-}
-.illustrator {
-  width: 55%;
-  -moz-animation: illustrator 2s ease;
-  -webkit-animation: illustrator 2s ease;
-}
-.wordpress {
-  width: 50%;
-  -moz-animation: wordpress 2s ease;
-  -webkit-animation: wordpress 2s ease;
-}
-.css {
-  width: 60%;
-  -moz-animation: css 2s ease;
-  -webkit-animation: css 2s ease;
 }
 .html5 {
   width: 80%;
-  -moz-animation: html5 2s ease;
-  -webkit-animation: html5 2s ease;
+  -moz-animation: agile 2s ease;
+  -webkit-animation: agile 2s ease;
 }
-.jquery {
+.css {
+  width: 80%;
+  -moz-animation: agile 2s ease;
+  -webkit-animation: agile 2s ease;
+}
+.reactjs {
+  width: 80%;
+  -moz-animation: agile 2s ease;
+  -webkit-animation: agile 2s ease;
+}
+.c {
+  width: 80%;
+  -moz-animation: agile 2s ease;
+  -webkit-animation: agile 2s ease;
+}
+.python {
+  width: 80%;
+  -moz-animation: agile 2s ease;
+  -webkit-animation: agile 2s ease;
+}
+.haskell {
+  width: 80%;
+  -moz-animation: agile 2s ease;
+  -webkit-animation: agile 2s ease;
+}
+.prolog {
+  width: 80%;
+  -moz-animation: agile 2s ease;
+  -webkit-animation: agile 2s ease;
+}
+.agile {
+  width: 60%;
+  -moz-animation: agile 2s ease;
+  -webkit-animation: agile 2s ease;
+}
+.studio {
+  width: 60%;
+  -moz-animation: studio 2s ease;
+  -webkit-animation: studio 2s ease;
+}
+.communication {
+  width: 60%;
+  -moz-animation: communication 2s ease;
+  -webkit-animation: communication 2s ease;
+}
+.kanban {
+  width: 55%;
+  -moz-animation: kanban 2s ease;
+  -webkit-animation: kanban 2s ease;
+}
+.gantt {
   width: 50%;
-  -moz-animation: jquery 2s ease;
-  -webkit-animation: jquery 2s ease;
+  -moz-animation: gantt 2s ease;
+  -webkit-animation: gantt 2s ease;
+}
+.git {
+  width: 60%;
+  -moz-animation: git 2s ease;
+  -webkit-animation: git 2s ease;
+}
+.jira {
+  width: 80%;
+  -moz-animation: jira 2s ease;
+  -webkit-animation: jira 2s ease;
+}
+.devops {
+  width: 50%;
+  -moz-animation: devops 2s ease;
+  -webkit-animation: devops 2s ease;
 }
 
 @-moz-keyframes photoshop {
@@ -521,8 +570,11 @@ ul#nav li.current a {
 }
 
 /* Portfolio Content */
-#portfolio-wrapper .columns {
-  margin-bottom: 36px;
+#portfolio-wrapper {
+  display: flex;
+}
+#portfolio-wrapper .col {
+  display: inline;
 }
 .portfolio-item .item-wrap {
   background: #fff;
@@ -536,7 +588,7 @@ ul#nav li.current a {
   transition: all 0.3s ease-in-out;
 }
 .portfolio-item .item-wrap a {
-  display: block;
+  display: inline-block;
   cursor: pointer;
 }
 
@@ -750,7 +802,6 @@ call-to-action .button {
   background-size: cover !important;
   -webkit-background-size: cover !important;
   background-attachment: fixed;
-
   position: relative;
   min-height: 200px;
   width: 100%;
@@ -895,7 +946,7 @@ call-to-action .button {
   text-align: left;
 }
 .flex-control-nav li {
-  margin: 0 6px;
+  margin: 0 12px;
   display: inline-block;
   zoom: 1;
   *display: inline;
@@ -933,6 +984,8 @@ call-to-action .button {
   padding-top: 96px;
   padding-bottom: 102px;
   color: #636363;
+  display: grid;
+  justify-content: center;
 }
 #contact .section-head {
   margin-bottom: 42px;
@@ -970,6 +1023,11 @@ call-to-action .button {
 
 #contact h4 {
   font: 16px/24px "opensans-bold", sans-serif;
+  color: #ebeeee;
+  margin-bottom: 6px;
+}
+#contact h5 {
+  font: 14px/20px "opensans-bold", sans-serif;
   color: #ebeeee;
   margin-bottom: 6px;
 }
@@ -1098,6 +1156,10 @@ footer a:hover,
 footer a:focus {
   color: #fff;
 }
+.footer-widgets{
+  display: inline;
+}
+
 
 /* copyright */
 footer .copyright {

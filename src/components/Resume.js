@@ -6,18 +6,18 @@ export default class Resume extends Component {
     return (
       <section id="resume">
         <Row className="education">
-          <Col className="three columns header-col">
+          <Col className="header-col">
             <h1>
               <span>Education</span>
             </h1>
           </Col>
 
-          <Col className="nine columns main-col">
+          <Col className="main-col">
             {resumeData.education &&
               resumeData.education.map((item, i) => {
                 return (
-                  <Row className="row item" key={i}>
-                    <Col className="twelve columns">
+                  <Row key={i} >
+                    <Col>
                       <h3>{item.UniversityName}</h3>
                       <p className="info">
                         {item.specialization}
@@ -37,18 +37,18 @@ export default class Resume extends Component {
               })}
           </Col>
         </Row>
-        <Row className="row work">
-          <div className="three columns header-col">
+        <Row className="work">
+          <Col className="header-col">
             <h1>
               <span>Work</span>
             </h1>
-          </div>
-          <div className="nine columns main-col">
+          </Col>
+          <Col className="main-col">
             {resumeData.work &&
               resumeData.work.map((item, i) => {
                 return (
-                  <Row className="row item" key={i}>
-                    <div className="twelve columns">
+                  <Row className="item" key={i}>
+                    <Col>
                       <h3>{item.CompanyName}</h3>
                       <p className="info">
                         {item.specialization}
@@ -62,41 +62,68 @@ export default class Resume extends Component {
                           <li key={i}>&bull; {ach}</li>
                         ))}
                       </ul>
-                    </div>
+                    </Col>
                   </Row>
                 );
               })}
-          </div>
+          </Col>
         </Row>
 
         <Row className="row skill">
-          <div className="three columns header-col">
+          <Col sm={{ span: 1, offset: 1 }} className="header-col">
             <h1>
               <span>Skills</span>
             </h1>
-          </div>
+          </Col>
 
-          <div className="nine columns main-col">
-            <p>{resumeData.skillsDescription}</p>
+          <Col>
+            {/* <p>{resumeData.skillsDescription}</p> */}
 
-            <div className="bars">
+            <Row className="bars">
               <ul className="skills">
                 {resumeData.skills &&
                   resumeData.skills.map((item, i) => {
                     return (
-                      <li key={i}>
+                      <Col key={i}>
                         <span
                           className={`bar-expand ${item.skillname.toLowerCase()}`}
                         ></span>
                         <em>{item.skillname}</em>
-                      </li>
+                      </Col>
+
                     );
                   })}
               </ul>
-            </div>
-          </div>
+            </Row>
+          </Col>
+          <Col sm={{ span: 1, offset: 1 }} className="header-col">
+            <h1>
+              <span>Languages</span>
+            </h1>
+          </Col>
+
+          <Col>
+            {/* <p>{resumeData.skillsDescription}</p> */}
+
+            <Row className="bars">
+              <ul className="skills">
+                {resumeData.languages &&
+                  resumeData.languages.map((item, i) => {
+                    return (
+                      <Col key={i}>
+                        <span
+                          className={`bar-expand ${item.language.toLowerCase()}`}
+                        ></span>
+                        <em>{item.language}</em>
+                      </Col>
+
+                    );
+                  })}
+              </ul>
+            </Row>
+          </Col>
         </Row>
-      </section>
+      </section >
     );
   }
 }

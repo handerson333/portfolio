@@ -75,13 +75,52 @@ let resumeData = {
   skillsDescription: "Your skills here",
   skills: [
     {
-      skillname: "HTML5"
+      skillname: "Communication"
     },
     {
-      skillname: "CSS"
+      skillname: "Kanban"
     },
     {
-      skillname: "Reactjs"
+      skillname: "Gantt Charts"
+    },
+    {
+      skillname: "Agile Software Development"
+    },
+    {
+      skillname: "Git"
+    },
+    {
+      skillname: "JIRA"
+    },
+    {
+      skillname: "Azure Devops"
+    },
+    {
+      skillname: "Visual Studio"
+    }
+  ],
+  languagesDescription: "Your languages here",
+  languages: [
+    {
+      language: "HTML5"
+    },
+    {
+      language: "CSS"
+    },
+    {
+      language: "Reactjs"
+    },
+    {
+      language: "C / C++ / C#"
+    },
+    {
+      language: "Python"
+    },
+    {
+      language: "Haskell"
+    },
+    {
+      language: "Prolog"
     }
   ],
   portfolio: [
@@ -108,8 +147,8 @@ let resumeData = {
   ],
   testimonials: [
     {
-      description: "This is a sample testimonial",
-      name: "Some technical guy"
+      description: "Beautiful Dick",
+      name: "The most beautiful girl in the world"
     },
     {
       description: "This is a sample testimonial",

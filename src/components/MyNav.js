@@ -15,32 +15,32 @@ export default class MyNav extends Component {
             </a> */}
           <ul id="nav">
             <li>
-              <Link to={"/#home"} className="smoothscroll">
+              <Link to={"/"} className="smoothscroll">
                 Home
             </Link>
             </li>
             <li>
-              <Link to={"/#about"} className="smoothscroll">
+              <Link to={"/"} className="smoothscroll">
                 About
             </Link>
             </li>
             <li>
-              <Link to={"/#resume"} className="smoothscroll">
+              <Link to={"/"} className="smoothscroll">
                 Resume
             </Link>
             </li>
             <li>
-              <Link to={"/#portfolio"} className="smoothscroll">
+              <Link to={"/"} className="smoothscroll">
                 Works
             </Link>
             </li>
             <li>
-              <Link to={"/#testimonials"} className="smoothscroll">
+              <Link to={"/"} className="smoothscroll">
                 Testimonials
             </Link>
             </li>
             <li>
-              <Link to={"/#contact"} className="smoothscroll">
+              <Link to={"/"} className="smoothscroll">
                 Contact
             </Link>
             </li>

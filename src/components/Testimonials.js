@@ -1,17 +1,18 @@
 import React, { Component } from "react";
+import { Row, Col } from "react-bootstrap";
 export default class Testimonials extends Component {
   render() {
     let resumeData = this.props.resumeData;
     return (
       <section id="testimonials">
         <div className="text-container">
-          <div className="row">
-            <div className="two columns header-col">
+          <Row>
+            <Col sm={{ span: 1, offset: 3 }} className="header-col">
               <h1>
                 <span>Client Quotes About Me</span>
               </h1>
-            </div>
-            <div className="ten columns flex-container">
+            </Col>
+            <Col sm="6" className="flex-container">
               <div className="flexslider">
                 <ul className="slides">
                   {resumeData.testimonials &&
@@ -28,9 +29,9 @@ export default class Testimonials extends Component {
                 </ul>
               </div>{" "}
               {/* div.flexslider ends */}
-            </div>{" "}
+            </Col>{" "}
             {/* div.flex-container ends */}
-          </div>{" "}
+          </Row>{" "}
           {/* row ends */}
         </div>{" "}
         {/* text-container ends */}

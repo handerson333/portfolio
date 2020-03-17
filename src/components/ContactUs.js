@@ -1,30 +1,34 @@
 import React, { Component } from "react";
+import { Row, Col } from "react-bootstrap";
 export default class ContactUs extends Component {
   render() {
     let resumeData = this.props.resumeData;
     return (
       <section id="contact">
-        <div className="row section-head">
-          <div className="ten columns">
+        <Row className="section-head">
+          <Col>
             <p className="lead">
               Feel free to contact me for any work or suggestions below
             </p>
-          </div>
-        </div>
-        <div className="row">
-          <aside className="eigth columns footer-widgets">
-            <div className="widget">
-              <h4>
-                Email:
-                <div>{resumeData.email}</div>
-              </h4>
-              <h4>
-                LinkedIn:
-                <div>{resumeData.linkedinId}</div>
-              </h4>
-            </div>
-          </aside>
-        </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="footer-widgets">
+            <Row>
+              <Col><h4>Email:</h4></Col>
+              <Col>
+                <h5>{resumeData.email}</h5>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <h4>LinkedIn:</h4></Col>
+              <Col>
+                <h5>{resumeData.linkedinId}</h5>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
       </section>
     );
   }

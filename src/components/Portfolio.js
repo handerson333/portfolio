@@ -1,20 +1,20 @@
 import React, { Component } from "react";
+import { Row, Col } from "react-bootstrap";
 export default class Porfolio extends Component {
   render() {
     let resumeData = this.props.resumeData;
     return (
       <section id="portfolio">
-        <div className="row">
-          <div className="twelve columns collapsed">
-            <h1>Check Out Some of the Work I Have DOne</h1>
+        <Row>
+          <Col>
+            <h1>Check Out Some of the Work I Have Done</h1>
             <div
               id="portfolio-wrapper"
-              className="bgrid-quarters s-bgrid-thirds cf"
             >
               {resumeData.portfolio &&
                 resumeData.portfolio.map(item => {
                   return (
-                    <div className="columns portfolio-item" key={item.name}>
+                    <Col sm="3" className="portfolio-item" key={item.name}>
                       <div className="item-wrap">
                         <a href="#modal-01">
                           <img
@@ -30,12 +30,12 @@ export default class Porfolio extends Component {
                           </div>
                         </a>
                       </div>
-                    </div>
+                    </Col>
                   );
                 })}
             </div>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </section>
     );
   }
