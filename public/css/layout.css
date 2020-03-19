@@ -347,7 +347,7 @@ ul#nav li.current a {
 }
 .bars .col {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 36px;
   background: #ccc;
   height: 28px;
   border-radius: 3px;
@@ -359,7 +359,7 @@ ul#nav li.current a {
   letter-spacing: 2px;
   font-weight: normal;
   position: relative;
-  top: -36px;
+  top: -24px;
 }
 .skills {
   width: 100%;

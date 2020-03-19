@@ -3,10 +3,15 @@ import MyNav from "../MyNav";
 import hikePlanData from "../../hikePlanData";
 import Table from "react-bootstrap/Table";
 import Container from "react-bootstrap/Container";
-import { StaticGoogleMap, Marker, Path } from "react-static-google-map";
+// import { StaticGoogleMap, Marker, Path } from "react-static-google-map";
+import MapContainer from "./TheMap";
+
 import { Row, Col } from "react-bootstrap";
 
 export default class Hike extends Component {
+  componentDidMount() {
+    // initMap()
+  }
   render() {
     return (
       <Container fluid>
@@ -14,27 +19,10 @@ export default class Hike extends Component {
           <MyNav />
         </Row>
         <Row className="hike-content">
-          <Col xs="6">
-            <StaticGoogleMap
-              size="400x1400"
-              apiKey="AIzaSyC-Q30UjGg8_-Kcc-1day5VcfrA0IExGA8"
-            >
-              <Marker.Group label="Here" color="brown">
-                <Marker location="42.065235, -122.602922" />
-              </Marker.Group>
-              <Path
-                points={[
-                  "32.5898,-116.4685",
-                  "36.6941,-118.372",
-                  "40.2132,-121.3546",
-                  "42.0038,-122.91",
-                  "45.6624,-121.8994",
-                  "49,-120.7987"
-                ]}
-              />
-            </StaticGoogleMap>
+          <Col sm={{ span: 4, offset: 1 }}>
+            <MapContainer />
           </Col>
-          <Col xs="3">
+          <Col sm={{ span: 3, offset: 2 }}>
             <Table striped bordered variant="dark">
               <thead>
                 <tr>

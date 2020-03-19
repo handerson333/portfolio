@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Navbar";
 
 export default class MyNav extends Component {
@@ -15,40 +14,40 @@ export default class MyNav extends Component {
             </a> */}
           <ul id="nav">
             <li>
-              <Link to={"/"} className="smoothscroll">
+              <a href={"/#home"} className="smoothscroll">
                 Home
-            </Link>
+            </a>
             </li>
             <li>
-              <Link to={"/"} className="smoothscroll">
+              <a href={"/#about"} className="smoothscroll">
                 About
-            </Link>
+            </a>
             </li>
             <li>
-              <Link to={"/"} className="smoothscroll">
+              <a href={"/#resume"} className="smoothscroll">
                 Resume
-            </Link>
+            </a>
             </li>
             <li>
-              <Link to={"/"} className="smoothscroll">
+              <a href={"/#portfolio"} className="smoothscroll">
                 Works
-            </Link>
+            </a>
             </li>
             <li>
-              <Link to={"/"} className="smoothscroll">
+              <a href={"/#testimonials"} className="smoothscroll">
                 Testimonials
-            </Link>
+            </a>
             </li>
             <li>
-              <Link to={"/"} className="smoothscroll">
+              <a href={"/#contact"} className="smoothscroll">
                 Contact
-            </Link>
+            </a>
             </li>
             <li>
-              <Link to={`/blog`}>Blog</Link>
+              <a href={`/blog`}>Blog</a>
             </li>
             <li>
-              <Link to={`/theHike/hike`}>The Hike</Link>
+              <a href={`/theHike/hike`}>The Hike</a>
             </li>
           </ul>
         </Nav>

@@ -1,5 +1,7 @@
 let hikePlanData = [
   {
+    lng: 32.58971,
+    lat: -116.46696,
     "Section Start Point": "US/Mexico Border",
     "Section End Point": "US/Mexico Border",
     "Base Distance": 0,
@@ -26,6 +28,8 @@ let hikePlanData = [
     "End Point ID": 1
   },
   {
+    lng: 32.58971,
+    lat: -116.46696,
     "Section Start Point": "US/Mexico Border",
     "Section End Point": "Mt. Laguna",
     "Base Distance": 42.3,
@@ -54,6 +58,8 @@ let hikePlanData = [
     "End Point ID": 37
   },
   {
+    lng: 33.27292,
+    lat: -116.64522,
     "Section Start Point": "Mt. Laguna",
     "Section End Point": "Warner Springs",
     "Base Distance": 67.3,
@@ -82,6 +88,8 @@ let hikePlanData = [
     "End Point ID": 76
   },
   {
+    lng: 33.77429,
+    lat: -116.673059,
     "Section Start Point": "Warner Springs",
     "Section End Point": "Idyllwild",
     "Base Distance": 69,
@@ -110,6 +118,8 @@ let hikePlanData = [
     "End Point ID": 116
   },
   {
+    lng: 34.290539,
+    lat: -116.802789,
     "Section Start Point": "Idyllwild",
     "Section End Point": "Big Bear City",
     "Base Distance": 95.5,
@@ -138,6 +148,8 @@ let hikePlanData = [
     "End Point ID": 178
   },
   {
+    lng: 34.355815,
+    lat: -117.680626,
     "Section Start Point": "Big Bear City",
     "Section End Point": "Wrightwood",
     "Base Distance": 89.5,
@@ -166,6 +178,8 @@ let hikePlanData = [
     "End Point ID": 245
   },
   {
+    lng: 34.49631,
+    lat: -118.32618,
     "Section Start Point": "Wrightwood",
     "Section End Point": "Agua Dulce",
     "Base Distance": 90.8,
