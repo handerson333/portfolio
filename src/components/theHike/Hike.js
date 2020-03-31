@@ -15,10 +15,10 @@ export default class Hike extends Component {
   render() {
     return (
       <Container fluid>
-        <Row>
+        <Row noGutters>
           <MyNav />
         </Row>
-        <Row className="hike-content">
+        <Row noGutters className="hike-content">
           <Col sm={{ span: 4, offset: 1 }}>
             <MapContainer />
           </Col>

@@ -96,6 +96,10 @@
 ---------------------------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
+   .profile-pic-wrapper {
+      visibility: hidden;
+      display: none;
+   }
 
    /* mobile navigation
    -------------------------------------------------------------------- */
@@ -252,11 +256,6 @@
    #call-to-action p { font-size: 15px; }
 
 
-   /* Portfolio Section
-   /* ----------------------------------------------------------------- */
-   #portfolio-wrapper .columns { margin-bottom: 40px; }
-   .popup-modal {	max-width: 85%; }
-
 
    /* Testimonials Section
    ----------------------------------------------------------------------- */
@@ -334,6 +333,10 @@
       font-size: 18px;
       line-height: 54px;
    }
+   .profile-pic-wrapper {
+      visibility: hidden;
+      display: none;
+   }
 
 
 }
@@ -368,7 +371,12 @@
 
    /* social links */
    footer .social-links { font-size: 20px; }
-   footer .social-links li { margin-left: 14px; }   
+   footer .social-links li { margin-left: 14px; }  
+
+   .profile-pic-wrapper {
+      visibility: hidden;
+      display: none;
+   }
 
 }
 

@@ -13,7 +13,7 @@ export default class About extends Component {
     return (
       <section id="about">
         <Row className="about">
-          <Col sm="3" className="profile-pic-wrapper">
+          <Col xs="3" className="profile-pic-wrapper">
             <img
               className="profile-pic"
               id="profile-pic"
@@ -22,7 +22,7 @@ export default class About extends Component {
             />
           </Col>
 
-          <Col sm="4">
+          <Col xs="4">
             <h2>About Me</h2>
             <p>{resumeData.aboutme}</p>
 
@@ -33,8 +33,8 @@ export default class About extends Component {
                   <span>{resumeData.name}</span>
                   <br></br>
                   <span>{resumeData.address}</span>
-                  {/* <br></br>
-                    <span>{resumeData.website}</span> */}
+                  <br></br>
+                  <span>{resumeData.website}</span>
                 </p>
               </Col>
             </Row>

@@ -6,7 +6,7 @@ let resumeData = {
   linkedinId: "hayden-anderson3",
   skypeid: "Your skypeid",
   roleDescription:
-    "I enjoy creating a seamless user experience in my projects that are usable across the board. In my freetime I enjoy reading, hiking, and playing competetive racquetball.",
+    "I enjoy creating a seamless user experience in my projects that are usable across the board. In my free time I enjoy reading, hiking, and playing competetive racquetball.",
   socialLinks: [
     {
       name: "linkedin",
@@ -22,7 +22,7 @@ let resumeData = {
   aboutme:
     "I am currently a software engineer on the adventure of a lifetime on the PCT",
   address: "Portland, OR USA",
-  website: "TODOMyWEBSITE",
+  website: "haydenanderson.xyz",
   education: [
     {
       UniversityName: "Oregon State University",
@@ -125,34 +125,37 @@ let resumeData = {
   ],
   portfolio: [
     {
-      name: "project1",
-      description: "mobileapp",
-      imgurl: "images/portfolio/phone.jpg"
+      name: "Oregon Racquetball Association",
+      description: "ORA website",
+      imgurl: "/images/portfolio/modals/oralogo.webp",
+      url: "https://oregonracquetball.org"
     },
     {
-      name: "project2",
-      description: "mobileapp",
-      imgurl: "images/portfolio/project.jpg"
+      name: "AllJoyn",
+      description: "Open Connectivity Foundation IoT Communications Framework",
+      imgurl: "/images/portfolio/modals/AllJoyn_Logo.jpg",
+      url: "https://en.wikipedia.org/wiki/AllJoyn"
     },
-    {
-      name: "project3",
-      description: "mobileapp",
-      imgurl: "images/portfolio/project2.png"
-    },
-    {
-      name: "project4",
-      description: "mobileapp",
-      imgurl: "images/portfolio/phone.jpg"
-    }
+    // {
+    //   name: "project3",
+    //   description: "mobileapp",
+    //   imgurl: "images/portfolio/project2.png"
+    // },
+    // {
+    //   name: "project4",
+    //   description: "mobileapp",
+    //   imgurl: "images/portfolio/phone.jpg"
+    // }
   ],
   testimonials: [
     {
-      description: "Beautiful Dick",
-      name: "The most beautiful girl in the world"
+      description: "I really appreciate the follow up and we’re always really impressed with your support response and willingness to help, which seems to be a rarity nowadays!",
+      name: "Kurt Schuff"
     },
     {
-      description: "This is a sample testimonial",
-      name: "Some technical guy"
+      description: "It’s refreshing to see that a software developer actually listens to their clients! Way to go. Thank you.",
+      name: "Jamin Kalita",
+      Title: ""
     }
   ]
 };

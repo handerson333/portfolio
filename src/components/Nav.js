@@ -43,9 +43,9 @@ export default class Nav extends Component {
                 Contact
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to={`/blog`}>Blog</Link>
-            </li>
+            </li> */}
             <li>
               <Link to={`/theHike/hike`}>The Hike</Link>
             </li>

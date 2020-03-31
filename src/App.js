@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import resumeData from "./resumeData";
 import Blog from "./components/Blog";
 import Hike from "./components/theHike/Hike";
+import { Container } from "react-bootstrap";
+
 class App extends Component {
   render() {
     return (
@@ -19,7 +21,7 @@ class App extends Component {
           exact={true}
           path="/"
           render={() => (
-            <div className="App">
+            <Container fluid className="App">
               <Header resumeData={resumeData} />
               <About resumeData={resumeData} />
               <Resume resumeData={resumeData} />
@@ -27,7 +29,7 @@ class App extends Component {
               <Testimonials resumeData={resumeData} />
               <ContactUs resumeData={resumeData} />
               <Footer resumeData={resumeData} />
-            </div>
+            </Container>
           )}
         />
 

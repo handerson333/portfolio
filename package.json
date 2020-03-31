@@ -1,5 +1,6 @@
 {
-  "name": "resume",
+  "name": "HaydenAndersonPortfolio",
+  "homepage": "http://haydenanderson.xyz",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

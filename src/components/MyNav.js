@@ -43,9 +43,9 @@ export default class MyNav extends Component {
                 Contact
             </a>
             </li>
-            <li>
+            {/* <li>
               <a href={`/blog`}>Blog</a>
-            </li>
+            </li> */}
             <li>
               <a href={`/theHike/hike`}>The Hike</a>
             </li>

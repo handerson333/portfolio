@@ -6,7 +6,7 @@ export default class Testimonials extends Component {
     return (
       <section id="testimonials">
         <div className="text-container">
-          <Row>
+          <Row noGutters>
             <Col sm={{ span: 1, offset: 3 }} className="header-col">
               <h1>
                 <span>Client Quotes About Me</span>

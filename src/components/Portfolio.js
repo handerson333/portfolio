@@ -5,7 +5,7 @@ export default class Porfolio extends Component {
     let resumeData = this.props.resumeData;
     return (
       <section id="portfolio">
-        <Row>
+        <Row noGutters>
           <Col>
             <h1>Check Out Some of the Work I Have Done</h1>
             <div
@@ -16,9 +16,9 @@ export default class Porfolio extends Component {
                   return (
                     <Col sm="3" className="portfolio-item" key={item.name}>
                       <div className="item-wrap">
-                        <a href="#modal-01">
+                        <a href={item.url}>
                           <img
-                            src="/images/portfolio/modals/oralogo.webp"
+                            src={item.imgurl}
                             alt="portfolioItem"
                             className="item-img"
                           />

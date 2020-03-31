@@ -5,7 +5,7 @@ export default class Footer extends Component {
     let resumeData = this.props.resumeData;
     return (
       <footer>
-        <Row>
+        <Row noGutters>
           <Col>
             <ul className="social-links">
               {resumeData.socialLinks &&

@@ -164,7 +164,7 @@ header .scrolldown a:hover {
 
 ul#nav {
   min-height: 32px;
-  width: auto;
+  width: 100%;
 
   /* center align the menu */
   text-align: center;
@@ -378,77 +378,79 @@ ul#nav li.current a {
   border-radius: 3px 0 0 3px;
 }
 .html5 {
-  width: 80%;
+  width: 90%;
+  background-color: #282c34;
+
   -moz-animation: agile 2s ease;
   -webkit-animation: agile 2s ease;
 }
 .css {
-  width: 80%;
+  width: 55%;
   -moz-animation: agile 2s ease;
   -webkit-animation: agile 2s ease;
 }
 .reactjs {
-  width: 80%;
+  width: 90%;
   -moz-animation: agile 2s ease;
   -webkit-animation: agile 2s ease;
 }
 .c {
-  width: 80%;
+  width: 85%;
   -moz-animation: agile 2s ease;
   -webkit-animation: agile 2s ease;
 }
 .python {
-  width: 80%;
+  width: 70%;
   -moz-animation: agile 2s ease;
   -webkit-animation: agile 2s ease;
 }
 .haskell {
-  width: 80%;
+  width: 60%;
   -moz-animation: agile 2s ease;
   -webkit-animation: agile 2s ease;
 }
 .prolog {
-  width: 80%;
+  width: 77%;
   -moz-animation: agile 2s ease;
   -webkit-animation: agile 2s ease;
 }
 .agile {
-  width: 60%;
+  width: 95%;
   -moz-animation: agile 2s ease;
   -webkit-animation: agile 2s ease;
 }
 .studio {
-  width: 60%;
+  width: 76%;
   -moz-animation: studio 2s ease;
   -webkit-animation: studio 2s ease;
 }
 .communication {
-  width: 60%;
+  width: 99%;
   -moz-animation: communication 2s ease;
   -webkit-animation: communication 2s ease;
 }
 .kanban {
-  width: 55%;
+  width: 86%;
   -moz-animation: kanban 2s ease;
   -webkit-animation: kanban 2s ease;
 }
 .gantt {
-  width: 50%;
+  width: 67%;
   -moz-animation: gantt 2s ease;
   -webkit-animation: gantt 2s ease;
 }
 .git {
-  width: 60%;
+  width: 78%;
   -moz-animation: git 2s ease;
   -webkit-animation: git 2s ease;
 }
 .jira {
-  width: 80%;
+  width: 65%;
   -moz-animation: jira 2s ease;
   -webkit-animation: jira 2s ease;
 }
 .devops {
-  width: 50%;
+  width: 78%;
   -moz-animation: devops 2s ease;
   -webkit-animation: devops 2s ease;
 }
@@ -663,76 +665,8 @@ ul#nav li.current a {
   filter: alpha(opacity=100);
 }
 
-/* popup modal */
-.popup-modal {
-  max-width: 550px;
-  background: #fff;
-  position: relative;
-  margin: 0 auto;
-}
-.popup-modal .description-box {
-  padding: 12px 36px 18px 36px;
-}
-.popup-modal .description-box h4 {
-  font: 15px/24px "opensans-bold", sans-serif;
-  margin-bottom: 12px;
-  color: #111;
-}
-.popup-modal .description-box p {
-  font: 14px/24px "opensans-regular", sans-serif;
-  color: #a1a1a1;
-  margin-bottom: 12px;
-}
-.popup-modal .description-box .categories {
-  font: 11px/21px "opensans-light", sans-serif;
-  color: #a1a1a1;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  display: block;
-  text-align: left;
-}
-.popup-modal .description-box .categories i {
-  margin-right: 8px;
-}
-.popup-modal .link-box {
-  padding: 18px 36px;
-  background: #111;
-  text-align: left;
-}
-.popup-modal .link-box a {
-  color: #fff;
-  font: 11px/21px "opensans-bold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  cursor: pointer;
-}
-.popup-modal a:hover {
-  color: #00cccc;
-}
-.popup-modal a.popup-modal-dismiss {
-  margin-left: 24px;
-}
 
-/* fadein/fadeout effect for modal popup
-/* ------------------------------------------------------------------ */
 
-/* content at start */
-.mfp-fade.mfp-wrap .mfp-content .popup-modal {
-  opacity: 0;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-}
-/* content fadein */
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content .popup-modal {
-  opacity: 1;
-}
-/* content fadeout */
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
-  opacity: 0;
-}
 
 /* ------------------------------------------------------------------ */
 /* f. Call To Action Section
@@ -1286,4 +1220,11 @@ footer .social-links li:first-child {
   padding-top: 32px;
   justify-content: center;
   background-color: black;
+}
+
+.container-fluid {
+  padding: 0px !important;
+}
+.profile-pic-wrapper{
+  
 }
