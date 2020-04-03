@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Nav from "./Nav";
+import { Row } from "react-bootstrap";
 
 export default class Header extends Component {
   render() {
@@ -9,7 +10,7 @@ export default class Header extends Component {
         <header id="home">
           <Nav />
 
-          <div className="row banner">
+          <Row className="banner">
             <div className="banner-text">
               <h1 className="responsive-headline">I am {resumeData.name}.</h1>
               <h3 style={{ color: "#fff", fontFamily: "sans-serif" }}>
@@ -29,7 +30,7 @@ export default class Header extends Component {
                   })}
               </ul>
             </div>
-          </div>
+          </Row>
 
           <p className="scrolldown">
             <a className="smoothscroll" href="#about">

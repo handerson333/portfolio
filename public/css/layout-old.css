@@ -22,7 +22,6 @@
 /* ------------------------------------------------------------------ */
 /* a. General Styles
 /* ------------------------------------------------------------------ */
-@media only screen and (min-width: 961px){
 
 body {
   background: #0f0f0f;
@@ -1226,4 +1225,6 @@ footer .social-links li:first-child {
 .container-fluid {
   padding: 0px !important;
 }
+.profile-pic-wrapper{
+  
 }
