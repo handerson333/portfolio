@@ -16,9 +16,11 @@ export default class Header extends Component {
       <React.Fragment>
         <header id="home">
           <Nav />
-          <div className="profile-pic-wrapper">
-            <ShowProfilePic />
-          </div>
+          {!this.isDesktop &&
+            <div className="profile-pic-wrapper">
+              <ShowProfilePic />
+            </div>
+          }
           <Row className="banner">
             <div className="banner-text">
               <h1 className="responsive-headline">I am {resumeData.name}.</h1>

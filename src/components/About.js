@@ -5,7 +5,7 @@ export default class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isDesktop: window.innerHeight > 960,
+      isDesktop: window.innerWidth > 960,
     };
   }
   render() {
@@ -19,7 +19,9 @@ export default class About extends Component {
     return (
       <section id="about">
         <Row className="about">
-          <ShowProfilePic />
+          {this.isDesktop &&
+            <ShowProfilePic />
+          }
           <Col className="about-text" xs="10">
             <h1>About Me</h1>
             <p>{resumeData.aboutme}</p>
