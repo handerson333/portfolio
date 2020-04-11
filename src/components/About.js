@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
 export default class About extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isDesktop: window.innerHeight > 960,
+    };
+  }
   render() {
     let resumeData = this.props.resumeData;
-    let imgNum = Math.floor(Math.random() * 12) + 1;
     // setInterval(()=>
     //   {
     //       var imgElement = document.getElementById('profile-pic')
@@ -13,28 +18,20 @@ export default class About extends Component {
     return (
       <section id="about">
         <Row className="about">
-          <Col xs="3" className="profile-pic-wrapper">
-            <img
-              className="profile-pic"
-              id="profile-pic"
-              src={"images/profilepics/hayden (" + imgNum + ").jpg"}
-              alt="hayden profile pic"
-            />
-          </Col>
-
-          <Col xs="4">
-            <h2>About Me</h2>
+          <ShowProfilePicIfDesktop />
+          <Col className="about-text" xs="10">
+            <h1>About Me</h1>
             <p>{resumeData.aboutme}</p>
 
             <Row>
               <Col>
-                <h2>Contact Details</h2>
+                <h1>Contact Details</h1>
                 <p className="address">
                   <span>{resumeData.name}</span>
                   <br></br>
                   <span>{resumeData.address}</span>
                   <br></br>
-                  <span>{resumeData.website}</span>
+                  <a href="/">{resumeData.website}</a>
                 </p>
               </Col>
             </Row>
@@ -42,5 +39,23 @@ export default class About extends Component {
         </Row>
       </section>
     );
+  }
+}
+function ShowProfilePicIfDesktop() {
+  let imgNum = Math.floor(Math.random() * 12) + 1;
+  if (window.innerHeight > 960) {
+    return (
+      <Col xs="3" className="profile-pic-wrapper">
+        <img
+          className="profile-pic"
+          id="profile-pic"
+          src={"images/profilepics/hayden (" + imgNum + ").jpg"}
+          alt="hayden profile pic"
+        />
+      </Col>
+    )
+  }
+  else {
+    return ""
   }
 }

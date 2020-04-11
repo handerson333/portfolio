@@ -2,19 +2,81 @@
 /* 0. Header Styles
 /* ------------------------------------------------------------------ */
 
+
+header .mobile-profile-pic{
+  visibility: visible;
+  display: inline-block;
+  position: center;
+  height: auto;
+  border: solid;
+  border-width: thick;
+  border-color: navy;
+  border-radius: 50%;
+  max-height:22.5rem;
+  max-width: 22.5rem;
+  overflow: hidden;
+}
+
 header {
   position: relative;
   height: 800px;
   min-height: 500px;
   width: 100%;
-  background: #161415 url(../images/header-background.jpg) no-repeat top center;
+  background: #161415 url(../../images/mobileBackgrounds/mobile-mountain-background.jpg) no-repeat top center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   text-align: center;
   overflow: hidden;
 }
+.profile-pic-wrapper {
+  padding-top: 15%;
+}
 
-/* vertically center banner section */
+.banner-text h1 {
+  color: aliceblue;
+  padding: .5em
+}
+.banner-text h3 {
+  color: aliceblue;
+  font-family: "sans-serif";
+  text-align: center;
+  padding-top: 2em;
+  margin: 0px auto;
+  width: 80%;
+}
+
+header .social {
+  margin: 18px 0 24px 0;
+  font-size: 36px;
+  line-height: 36px;      
+}
+header .social li { 
+  display: inline-block;
+  margin: 0 2rem; 
+}
+header .scrolldown a {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -29px;
+  color: #fff;
+  display: block;
+  height: 42px;
+  width: 42px;
+  font-size: 42px;
+  line-height: 42px;
+  color: #fff;
+  border-radius: 100%;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header .scrolldown a:hover {
+  color: #11abb0;
+}
+/* vertically center banner section
 header:before {
   content: "";
   display: inline-block;
@@ -58,7 +120,7 @@ header .banner-text hr {
   border-color: rgba(150, 150, 150, 0.1);
 }
 
-/* header social links */
+/* header social links 
 header .social {
   margin: 24px 0;
   padding: 0;
@@ -77,7 +139,7 @@ header .social li a:hover {
   color: #11abb0;
 }
 
-/* scrolldown link */
+/* scrolldown link 
 header .scrolldown a {
   position: absolute;
   bottom: 30px;

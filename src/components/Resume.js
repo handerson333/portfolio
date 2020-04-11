@@ -6,13 +6,13 @@ export default class Resume extends Component {
     return (
       <section id="resume">
         <Row className="education">
-          <Col xs={{ span: 3, offset: 1 }} className="header-col">
+          <Col xs={{ span: 12 }} className="header-col">
             <h1>
               <span>Education</span>
             </h1>
           </Col>
 
-          <Col xs={{ span: 5, offset: 1 }} className="main-col">
+          <Col xs={{ span: 10 }} className="main-col">
             {resumeData.education &&
               resumeData.education.map((item, i) => {
                 return (
@@ -38,12 +38,12 @@ export default class Resume extends Component {
           </Col>
         </Row>
         <Row className="work">
-          <Col xs={{ span: 3, offset: 1 }} className="header-col">
+          <Col xs={{ span: 12 }} className="header-col">
             <h1>
               <span>Work</span>
             </h1>
           </Col>
-          <Col xs={{ span: 5, offset: 1 }} className="main-col">
+          <Col xs={{ span: 10 }} className="main-col">
             {resumeData.work &&
               resumeData.work.map((item, i) => {
                 return (

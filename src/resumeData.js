@@ -20,7 +20,7 @@ let resumeData = {
     }
   ],
   aboutme:
-    "I am currently a software engineer on the adventure of a lifetime on the PCT",
+    "Learning all of the intricacies of being quarantined for an extended period of time",
   address: "Portland, OR USA",
   website: "haydenanderson.xyz",
   education: [
@@ -36,7 +36,7 @@ let resumeData = {
       ]
     },
     {
-      UniversityName: "Chemeketa",
+      UniversityName: "Chemeketa Community College",
       specialization: "Fire Suppression and EMT",
       MonthOfPassing: "Jan",
       YearOfPassing: "2015",
