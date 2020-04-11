@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Nav from "./Nav";
 import { Row } from "react-bootstrap";
+import { ShowProfilePic } from "./ShowProfilePic"
 
 export default class Header extends Component {
   constructor(props) {
@@ -15,7 +16,9 @@ export default class Header extends Component {
       <React.Fragment>
         <header id="home">
           <Nav />
-          <div className="profile-pic-wrapper"><ShowProfilePicIfMobile /></div>
+          <div className="profile-pic-wrapper">
+            <ShowProfilePic />
+          </div>
           <Row className="banner">
             <div className="banner-text">
               <h1 className="responsive-headline">I am {resumeData.name}.</h1>
@@ -46,25 +49,4 @@ export default class Header extends Component {
       </React.Fragment>
     );
   }
-}
-
-
-function ShowProfilePicIfMobile() {
-  let imgNum = Math.floor(Math.random() * 12) + 1;
-  if (window.innerHeight < 960) {
-    return (
-      <Row className="mobile-profile-pic">
-        <img
-          className="profile-pic"
-          id="profile-pic"
-          src={"images/profilepics/hayden (" + imgNum + ").jpg"}
-          alt="hayden profile pic"
-        />
-      </Row>
-    )
-  }
-  else {
-    return ""
-  }
-
 }

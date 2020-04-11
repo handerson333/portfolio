@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
+import { ShowProfilePic } from "./ShowProfilePic"
 export default class About extends Component {
   constructor(props) {
     super(props);
@@ -18,7 +19,7 @@ export default class About extends Component {
     return (
       <section id="about">
         <Row className="about">
-          <ShowProfilePicIfDesktop />
+          <ShowProfilePic />
           <Col className="about-text" xs="10">
             <h1>About Me</h1>
             <p>{resumeData.aboutme}</p>
@@ -39,23 +40,5 @@ export default class About extends Component {
         </Row>
       </section>
     );
-  }
-}
-function ShowProfilePicIfDesktop() {
-  let imgNum = Math.floor(Math.random() * 12) + 1;
-  if (window.innerHeight > 960) {
-    return (
-      <Col xs="3" className="profile-pic-wrapper">
-        <img
-          className="profile-pic"
-          id="profile-pic"
-          src={"images/profilepics/hayden (" + imgNum + ").jpg"}
-          alt="hayden profile pic"
-        />
-      </Col>
-    )
-  }
-  else {
-    return ""
   }
 }
