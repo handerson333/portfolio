@@ -54,6 +54,9 @@ header .social li {
   display: inline-block;
   margin: 0 2rem; 
 }
+header .social li a {
+  color: #fff;
+}
 header .scrolldown a {
   position: absolute;
   bottom: 30px;

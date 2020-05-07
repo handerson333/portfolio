@@ -2,6 +2,28 @@
 /* 3. Portfolio Section
 /* ------------------------------------------------------------------ */
 
+
+
+
+.portfolio-item .portfolio-item-meta {
+  padding: 18px;
+}
+.portfolio-item .portfolio-item-meta h5 {
+  font: 14px/21px "opensans-bold", sans-serif;
+  color: #fff;
+}
+.portfolio-item .portfolio-item-meta p {
+  font: 12px/18px "opensans-light", sans-serif;
+  color: #c6c7c7;
+  margin-bottom: 0;
+}
+
+
+.portfolio-item-meta {
+  visibility: hidden;
+}
+
+
 #portfolio {
   background: #ebeeee;
   padding-top: 90px;
@@ -16,7 +38,7 @@
   color: #95a3a3;
 }
 
-/* Portfolio Content */
+/* Portfolio Content  */
 #portfolio-wrapper {
   display: flex;
 }
@@ -39,7 +61,7 @@
   cursor: pointer;
 }
 
-/* overlay */
+/* overlay  */
 .portfolio-item .item-wrap .overlay {
   position: absolute;
   left: 0;
@@ -98,7 +120,7 @@
   margin-bottom: 0;
 }
 
-/* on hover */
+ /* on hover  */
 .portfolio-item:hover .overlay {
   opacity: 1;
   -moz-opacity: 1;

@@ -28,6 +28,7 @@
 }
 .row {
   margin: 0px !important;
+  text-align: center;
 }
 @media only screen and (min-width: 961px){
 

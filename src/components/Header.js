@@ -7,7 +7,7 @@ export default class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isDesktop: window.innerHeight > 960,
+      isDesktop: window.innerWidth > 960,
     };
   }
   render() {

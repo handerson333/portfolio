@@ -55,6 +55,7 @@
 }
 .education li, .work li {
   margin-bottom: 0px;
+  text-align: left;
 }
 #resume .info {
   font: 16px/24px "librebaskerville-italic", serif;

@@ -2,8 +2,11 @@
 /* 5. Feedback Quotes
 /* ------------------------------------------------------------------ */
 
+/*	Blockquotes */
+
+
 #testimonials {
-  background: #1f1f1f url(../images/testimonials-bg.jpg) no-repeat center center;
+  background: #1f1f1f url(/images/testimonials-bg.jpg) no-repeat center center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   background-attachment: fixed;
@@ -52,8 +55,9 @@
 #testimonials blockquote p {
   font-family: "librebaskerville-italic", serif;
   padding: 0;
-  font-size: 24px;
-  line-height: 48px;
+  font-size: 2rem;
+  line-height: 4rem;
+  margin: 1rem 3rem;  
   color: #fff;
 }
 #testimonials blockquote cite {
@@ -71,6 +75,30 @@
   color: #8b9798;
   border: none;
 }
+
+#testimonials .header-col h1:before {
+  font-size: 66px;
+  line-height: 66px;
+}
+#testimonials blockquote p {
+  font-size: 22px;
+  line-height: 46px;      
+}
+#testimonials .text-container { text-align: center; }
+#testimonials h1 {
+   font: 16px/24px 'opensans-bold', sans-serif;
+   text-align: center;
+   margin-bottom: 30px;
+   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+}
+#testimonials h1 span { display: block; }
+#testimonials .header-col h1:before { content: none; }
+#testimonials blockquote { padding-bottom: 24px; }
+#testimonials blockquote p {
+   font-size: 20px;
+   line-height: 42px;      
+}
+
 
 /* Flex Slider
 /* ------------------------------------------------------------------ */
@@ -148,7 +176,7 @@
   width: 100%;
   position: absolute;
   bottom: -20px;
-  text-align: left;
+  text-align: center;
 }
 .flex-control-nav li {
   margin: 0 12px;

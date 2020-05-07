@@ -5,7 +5,7 @@ export default class Porfolio extends Component {
     let resumeData = this.props.resumeData;
     return (
       <section id="portfolio">
-        <Row noGutters>
+        <Row>
           <Col>
             <h1>Check Out Some of the Work I Have Done</h1>
             <div

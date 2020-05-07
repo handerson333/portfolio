@@ -57,11 +57,11 @@ export default class Resume extends Component {
                           {item.MonthOfLeaving} {item.YearOfLeaving}
                         </em>
                       </p>
-                      <ul>
+                      <Row>
                         {item.Achievements.map((ach, i) => (
-                          <li key={i}>&bull; {ach}</li>
+                          <li key={i}>{ach}</li>
                         ))}
-                      </ul>
+                      </Row>
                     </Col>
                   </Row>
                 );
