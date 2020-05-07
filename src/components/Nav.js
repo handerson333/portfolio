@@ -46,9 +46,9 @@ export default class Nav extends Component {
             {/* <li>
               <Link to={`/blog`}>Blog</Link>
             </li> */}
-            <li>
+            {/* <li>
               <Link to={`/theHike/hike`}>The Hike</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </React.Fragment>

@@ -46,9 +46,9 @@ export default class MyNav extends Component {
             {/* <li>
               <a href={`/blog`}>Blog</a>
             </li> */}
-            <li>
+            {/* <li>
               <a href={`/theHike/hike`}>The Hike</a>
-            </li>
+            </li> */}
           </ul>
         </Nav>
       </React.Fragment>
