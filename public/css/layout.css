@@ -319,9 +319,6 @@ ul#nav li.current a {
   padding-top: 9px;
   display: grid;
 }
-#resume .main-col {
-  padding-right: 10%;
-}
 
 .education,
 .work {
