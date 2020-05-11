@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
-import { ShowProfilePic } from "./ShowProfilePic"
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect";
+
 export default class About extends Component {
   constructor(props) {
     super(props);
@@ -10,6 +16,8 @@ export default class About extends Component {
   }
   render() {
     let resumeData = this.props.resumeData;
+    let imgNum = Math.floor(Math.random() * 12) + 1;
+
     // setInterval(()=>
     //   {
     //       var imgElement = document.getElementById('profile-pic')
@@ -19,8 +27,15 @@ export default class About extends Component {
     return (
       <section id="about">
         <Row className="about">
-          {this.isDesktop &&
-            <ShowProfilePic />
+          {!isMobile &&
+            <Col xs="3" className="profile-pic-wrapper">
+              <img
+                className="profile-pic"
+                id="profile-pic"
+                src={"images/profilepics/hayden (" + imgNum + ").jpg"}
+                alt="hayden profile pic"
+              />
+            </Col>
           }
           <Col className="about-text" xs="10">
             <h1>About Me</h1>

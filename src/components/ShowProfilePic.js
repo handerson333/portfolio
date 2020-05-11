@@ -5,14 +5,7 @@ export function ShowProfilePic() {
   let imgNum = Math.floor(Math.random() * 12) + 1;
   if (window.innerWidth > 960) {
     return (
-      <Col xs="3" className="profile-pic-wrapper">
-        <img
-          className="profile-pic"
-          id="profile-pic"
-          src={"images/profilepics/hayden (" + imgNum + ").jpg"}
-          alt="hayden profile pic"
-        />
-      </Col>
+      <div></div>
     )
   }
   else {

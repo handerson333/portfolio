@@ -1,24 +1,38 @@
 import React, { Component } from "react";
 import Nav from "./Nav";
 import { Row } from "react-bootstrap";
-import { ShowProfilePic } from "./ShowProfilePic"
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect";
 
 export default class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isDesktop: window.innerWidth > 960,
+      isDesktop: window.innerWidth < 960,
     };
   }
+
   render() {
     let resumeData = this.props.resumeData;
+    let imgNum = Math.floor(Math.random() * 12) + 1;
     return (
       <React.Fragment>
         <header id="home">
           <Nav />
-          {!this.isDesktop &&
+          {isMobile &&
             <div className="profile-pic-wrapper">
-              <ShowProfilePic />
+              <Row className="mobile-profile-pic">
+                <img
+                  className="profile-pic"
+                  id="profile-pic"
+                  src={"images/profilepics/hayden (" + imgNum + ").jpg"}
+                  alt="hayden profile pic"
+                />
+              </Row>
             </div>
           }
           <Row className="banner">
