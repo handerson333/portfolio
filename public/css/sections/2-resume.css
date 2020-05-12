@@ -1,0 +1,185 @@
+/* ------------------------------------------------------------------ */
+/* 2. Resume Section
+/* ------------------------------------------------------------------ */
+
+#resume {
+  background: #fff;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+
+#resume a,
+#resume a:visited {
+  color: #11abb0;
+}
+#resume a:hover,
+#resume a:focus {
+  color: #313131;
+}
+
+#resume h1 {
+  font: 24px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#resume h1 span {
+  border-bottom: 3px solid #11abb0;
+  padding-bottom: 6px;
+}
+#resume h3 {
+  font: 25px/30px "opensans-bold", sans-serif;
+}
+#resume h3, #resume .info { text-align: center; }
+
+#resume .header-col {
+  display: grid;
+  padding-top: 0;
+  margin-bottom: 20px;
+  margin-top: 24px;
+  text-align: center;
+}
+#resume .main-col {
+  margin: auto;
+}
+
+.education {
+  background-color: #f7a162;
+}
+
+.education,
+.work {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.education .col, .work .col {
+  margin-bottom: 0px;
+  font-size: 1.3rem;
+}
+#resume .info {
+  font: 16px/24px "librebaskerville-italic", serif;
+  color: #6e7881;
+  margin-bottom: 18px;
+  margin-top: 9px;
+}
+#resume .info span {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+#resume .date {
+  font: 15px/24px "opensans-regular", sans-serif;
+  margin-top: 6px;
+}
+
+
+
+/*----------------------------------------------*/
+/*	Skill Bars
+/*----------------------------------------------*/
+
+.bars {
+  width: 95%;
+  float: left;
+  padding: 0;
+  text-align: left;
+}
+.bars .skills {
+  margin-top: 36px;
+  list-style: none;
+}
+.bars .col {
+  position: relative;
+  margin-bottom: 36px;
+  background: #ccc;
+  height: 28px;
+  border-radius: 3px;
+}
+.bars .col em {
+  font: 15px "opensans-bold", sans-serif;
+  color: #313131;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+  position: relative;
+  top: -24px;
+}
+.skills {
+  width: 100%;
+}
+.bar-expand {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  margin: 0;
+  padding-right: 12px;
+  background: #313131;
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 3px 0 0 3px;
+
+}
+
+
+@media only screen and (min-width: 960px) {
+  #resume h3 {
+    padding-top: 1%;
+  }
+  
+}
+
+
+/* SKILLS */
+.html5, .css, .reactjs, .c, .python, .haskell, .prolog, .agile, .kanban, .gantt, .studio, .communication, .git, .jira, .devops {
+  animation: agile 2s ease;
+  -moz-animation: agile 2s ease;
+  -webkit-animation: agile 2s ease;
+}
+
+.html5 {
+  width: 90%;
+}
+.css {
+  width: 55%;
+}
+.reactjs {
+  width: 90%;
+}
+.c {
+  width: 85%;
+}
+.python {
+  width: 70%;
+}
+.haskell {
+  width: 60%;
+}
+.prolog {
+  width: 77%;
+}
+.agile {
+  width: 95%;
+}
+.studio {
+  width: 76%;
+}
+.communication {
+  width: 99%;
+}
+.kanban {
+  width: 86%;
+}
+.gantt {
+  width: 67%;
+}
+.git {
+  width: 78%;
+}
+.jira {
+  width: 65%;
+}
+.devops {
+  width: 78%;
+}

@@ -1,0 +1,134 @@
+/* ------------------------------------------------------------------ */
+/* 1. About Section
+/* ------------------------------------------------------------------ */
+
+.about-text{
+  padding-top: 2em;
+  margin: 0 auto;
+  text-align: center;
+}
+#about p{
+  font: 14px/22px "opensans", sans-serif;
+}
+
+#about a,
+#about a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+#about a:hover,
+#about a:active,
+#about a:focus {
+  color: #11abb0 !important;
+  text-decoration: underline;
+  color: inherit;
+}
+  
+
+@media only screen and (min-width: 960px) {
+  #about {
+    background: #2b2b2b;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+  }
+  .about {
+    justify-content: center;
+    font-size: 14px;
+  }
+  #about .profile-pic-wrapper {
+    display: grid;
+    justify-content: right;
+  }
+  #about .profile-pic {
+    position: center;
+    width: 200px;
+    height: auto;
+    border-radius: 0%;
+  }
+
+
+  #about h1 {
+    font: 22px/30px "opensans-bold", sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  #about p {
+    line-height: 30px;
+    color: #979797;
+  }
+
+  .about-text{
+    padding-right: 20% !important;
+  }
+
+  #about a:visited {
+    color: inherit;
+    color: #fff;
+  }
+  
+}
+
+/* #about {
+  background: #2b2b2b;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
+}
+.about {
+  justify-content: center;
+  font-size: 14px;
+}
+#about a,
+#about a:visited {
+  color: #fff;
+}
+#about a:hover,
+#about a:focus {
+  color: #11abb0;
+}
+
+#about h2 {
+  font: 22px/30px "opensans-bold", sans-serif;
+  color: #fff;
+  margin-bottom: 12px;
+}
+#about p {
+  line-height: 30px;
+  color: #7a7a7a;
+}
+#about .profile-pic {
+  visibility: hidden;
+  position: center;
+  width: 200px;
+  height: auto;
+  padding-right: 20%;
+  border-radius: 0%;
+}
+#about .profile-pic-wrapper {
+  display: grid;
+  justify-content: right;
+}
+#about .contact-details {
+  width: 41.66667%;
+}
+#about .download {
+  width: 58.33333%;
+  padding-top: 6px;
+}
+#about .main-col {
+  padding-right: 5%;
+}
+#about .download .button {
+  margin-top: 6px;
+  background: #444;
+}
+#about .download .button:hover {
+  background: #fff;
+  color: #2b2b2b;
+}
+#about .download .button i {
+  margin-right: 15px;
+  font-size: 20px;
+} */

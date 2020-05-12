@@ -30,13 +30,13 @@ let resumeData = {
       MonthOfPassing: "June",
       YearOfPassing: "2018",
       Achievements: [
-        "Focus in Netowrking and IoT",
+        "Focus in Networking and IoT",
         "Minor in Business and Entrepreneurship",
         "President of National Champion Racquetball Team"
       ]
     },
     {
-      UniversityName: "Chemeketa",
+      UniversityName: "Chemeketa Community College",
       specialization: "Fire Suppression and EMT",
       MonthOfPassing: "Jan",
       YearOfPassing: "2015",
@@ -155,7 +155,32 @@ let resumeData = {
     {
       description: "It’s refreshing to see that a software developer actually listens to their clients! Way to go. Thank you.",
       name: "Jamin Kalita",
-      Title: ""
+      title: ""
+    },
+    {
+      description: "In all aspects of work, Hayden is not satisfied unless achieving the highest standards. Works relentlessly to improve skills and knowledge, and the quality of work output.",
+      name: "Sal D'Auria",
+      title: "CEO of Ventacity Systems"
+    },
+    {
+      description: "Always contributes vigorously to the efforts of the team, whether as a leader or a team member. Understands own weaknesses and others strengths and goes to the right people for help. Sympathetically helps others to address their weaknesses.  Hayden continues to take on challenges such as the ongoing mobile testing platform.",
+      name: "Jared Lorz",
+      title: "Lead DevOps Engineer"
+    },
+    {
+      description: "Aiming for a top job in the organization. He sets very high standards, aware that this will bring attention and promotion. Always eager to take on a new task, whether hard or simple, and tackles it diligently, without question or complaint. This positive attitude inspires others too. ",
+      name: "Mike Turner",
+      title: "US Director of IT Development"
+    },
+    {
+      description: "A pleasant, outgoing personality who always gets on well with others. Hayden will always be noticed and popular in a group.",
+      name: "Doug Davault",
+      title: "CEO"
+    },
+    {
+      description: "Hayden enjoys working without supervision and usually continues to carry out duties effectively. Always contributes vigorously to the efforts of the team, whether as a leader or a team member. Understands own weaknesses and others strengths and goes to the right people for help. Sympathetically helps others to address their weaknesses.",
+      name: "Carrie Hertel",
+      title: "CASS Director"
     }
   ]
 };

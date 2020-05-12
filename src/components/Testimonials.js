@@ -21,7 +21,7 @@ export default class Testimonials extends Component {
                         <li key={i}>
                           <blockquote>
                             <p>{item.description}</p>
-                            <cite>{item.name}</cite>
+                            <footer><cite>{item.name}{(item.title) && ", " + item.title}</cite></footer>
                           </blockquote>
                         </li>
                       );

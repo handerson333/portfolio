@@ -1,0 +1,59 @@
+/* ------------------------------------------------------------------ */
+/* Hike Plan
+/* ------------------------------------------------------------------ */
+
+#Hike {
+  padding-top: 100px;
+  width: 30%;
+  float: right;
+}
+#hike-plan {
+  border-spacing: 0px;
+  background: whitesmoke;
+  box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0.05);
+  text-align: center;
+  width: 100%;
+}
+#hike-plan h1 {
+  font: 15px/24px "opensans-semibold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 48px;
+  color: whitesmoke;
+}
+
+/* Portfolio Content */
+#hike-plan-wrapper .columns {
+  margin-bottom: 36px;
+}
+
+.hike-plan-item .item-wrap a {
+  color: whitesmoke !important;
+  text-align: center;
+
+  border: 1px solid #f4f6f8;
+  padding: 4px;
+}
+
+/* on hover */
+.hike-plan-item:hover .overlay {
+  opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=100);
+}
+.hike-plan-item:hover .link-icon {
+  opacity: 1;
+  -moz-opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hike-content {
+  padding-top: 32px;
+  justify-content: center;
+  background-color: black;
+}
+
+.container-fluid {
+  padding: 0px !important;
+}

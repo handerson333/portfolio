@@ -6,13 +6,13 @@ export default class Resume extends Component {
     return (
       <section id="resume">
         <Row className="education">
-          <Col xs={{ span: 3, offset: 1 }} className="header-col">
+          <Col xs={{ span: 12 }} className="header-col">
             <h1>
               <span>Education</span>
             </h1>
           </Col>
 
-          <Col xs={{ span: 5, offset: 1 }} className="main-col">
+          <Col xs={{ span: 10 }} className="main-col">
             {resumeData.education &&
               resumeData.education.map((item, i) => {
                 return (
@@ -28,7 +28,7 @@ export default class Resume extends Component {
                       </p>
                       <ul>
                         {item.Achievements.map((ach, i) => (
-                          <li key={i}>&bull; {ach}</li>
+                          <Col xs={12} key={i}>&bull; {ach}</Col>
                         ))}
                       </ul>
                     </Col>
@@ -38,12 +38,12 @@ export default class Resume extends Component {
           </Col>
         </Row>
         <Row className="work">
-          <Col xs={{ span: 3, offset: 1 }} className="header-col">
+          <Col xs={{ span: 12 }} className="header-col">
             <h1>
               <span>Work</span>
             </h1>
           </Col>
-          <Col xs={{ span: 5, offset: 1 }} className="main-col">
+          <Col xs={{ span: 10 }} className="main-col">
             {resumeData.work &&
               resumeData.work.map((item, i) => {
                 return (
@@ -57,11 +57,11 @@ export default class Resume extends Component {
                           {item.MonthOfLeaving} {item.YearOfLeaving}
                         </em>
                       </p>
-                      <ul>
+                      <Row>
                         {item.Achievements.map((ach, i) => (
-                          <li key={i}>&bull; {ach}</li>
+                          <Col xs={12} key={i}><span>&bull;{" "}</span>{ach}</Col>
                         ))}
-                      </ul>
+                      </Row>
                     </Col>
                   </Row>
                 );
@@ -70,7 +70,7 @@ export default class Resume extends Component {
         </Row>
 
         <Row className="row skill">
-          <Col sm={{ span: 1, offset: 1 }} className="header-col">
+          <Col xs={{ span: 12 }} lg={{ span: 2 }} className="header-col">
             <h1>
               <span>Skills</span>
             </h1>
@@ -79,7 +79,7 @@ export default class Resume extends Component {
           <Col>
             {/* <p>{resumeData.skillsDescription}</p> */}
 
-            <Row className="bars">
+            <div className="bars">
               <ul className="skills">
                 {resumeData.skills &&
                   resumeData.skills.map((item, i) => {
@@ -94,9 +94,9 @@ export default class Resume extends Component {
                     );
                   })}
               </ul>
-            </Row>
+            </div>
           </Col>
-          <Col sm={{ span: 1 }} className="header-col">
+          <Col xs={{ span: 12 }} lg={{ span: 2 }} className="header-col">
             <h1>
               <span>Languages</span>
             </h1>
@@ -105,7 +105,7 @@ export default class Resume extends Component {
           <Col>
             {/* <p>{resumeData.skillsDescription}</p> */}
 
-            <Row className="bars">
+            <div className="bars">
               <ul className="skills">
                 {resumeData.languages &&
                   resumeData.languages.map((item, i) => {
@@ -120,7 +120,7 @@ export default class Resume extends Component {
                     );
                   })}
               </ul>
-            </Row>
+            </div>
           </Col>
         </Row>
       </section >
