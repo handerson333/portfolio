@@ -2,15 +2,6 @@
 /* 1. About Section
 /* ------------------------------------------------------------------ */
 
-#about .profile-pic {
-  visibility: hidden;
-  position: center;
-  width: 200px;
-  height: auto;
-  padding-right: 20%;
-  border-radius: 0%;
-}
-
 .about-text{
   padding-top: 2em;
   margin: 0 auto;
@@ -18,28 +9,66 @@
 }
 #about p{
   font: 14px/22px "opensans", sans-serif;
+}
 
-}
-.address a:link {
+#about a,
+#about a:link {
   text-decoration: none;
   color: inherit;
 }
-  
-.address a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-  
-.address a:hover {
+
+#about a:hover,
+#about a:active,
+#about a:focus {
+  color: #11abb0 !important;
   text-decoration: underline;
   color: inherit;
 }
   
-.address a:active {
-  text-decoration: underline;
-  color: inherit;
-}
 
+@media only screen and (min-width: 960px) {
+  #about {
+    background: #2b2b2b;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+  }
+  .about {
+    justify-content: center;
+    font-size: 14px;
+  }
+  #about .profile-pic-wrapper {
+    display: grid;
+    justify-content: right;
+  }
+  #about .profile-pic {
+    position: center;
+    width: 200px;
+    height: auto;
+    border-radius: 0%;
+  }
+
+
+  #about h1 {
+    font: 22px/30px "opensans-bold", sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  #about p {
+    line-height: 30px;
+    color: #979797;
+  }
+
+  .about-text{
+    padding-right: 20% !important;
+  }
+
+  #about a:visited {
+    color: inherit;
+    color: #fff;
+  }
+  
+}
 
 /* #about {
   background: #2b2b2b;

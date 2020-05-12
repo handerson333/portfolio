@@ -119,179 +119,67 @@
   height: 28px;
   line-height: 28px;
   border-radius: 3px 0 0 3px;
-}
-.html5 {
-  width: 90%;
-  background-color: #282c34;
 
+}
+
+
+@media only screen and (min-width: 960px) {
+  #resume h3 {
+    padding-top: 1%;
+  }
+  
+}
+
+
+/* SKILLS */
+.html5, .css, .reactjs, .c, .python, .haskell, .prolog, .agile, .kanban, .gantt, .studio, .communication, .git, .jira, .devops {
+  animation: agile 2s ease;
   -moz-animation: agile 2s ease;
   -webkit-animation: agile 2s ease;
+}
+
+.html5 {
+  width: 90%;
 }
 .css {
   width: 55%;
-  -moz-animation: agile 2s ease;
-  -webkit-animation: agile 2s ease;
 }
 .reactjs {
   width: 90%;
-  -moz-animation: agile 2s ease;
-  -webkit-animation: agile 2s ease;
 }
 .c {
   width: 85%;
-  -moz-animation: agile 2s ease;
-  -webkit-animation: agile 2s ease;
 }
 .python {
   width: 70%;
-  -moz-animation: agile 2s ease;
-  -webkit-animation: agile 2s ease;
 }
 .haskell {
   width: 60%;
-  -moz-animation: agile 2s ease;
-  -webkit-animation: agile 2s ease;
 }
 .prolog {
   width: 77%;
-  -moz-animation: agile 2s ease;
-  -webkit-animation: agile 2s ease;
 }
 .agile {
   width: 95%;
-  -moz-animation: agile 2s ease;
-  -webkit-animation: agile 2s ease;
 }
 .studio {
   width: 76%;
-  -moz-animation: studio 2s ease;
-  -webkit-animation: studio 2s ease;
 }
 .communication {
   width: 99%;
-  -moz-animation: communication 2s ease;
-  -webkit-animation: communication 2s ease;
 }
 .kanban {
   width: 86%;
-  -moz-animation: kanban 2s ease;
-  -webkit-animation: kanban 2s ease;
 }
 .gantt {
   width: 67%;
-  -moz-animation: gantt 2s ease;
-  -webkit-animation: gantt 2s ease;
 }
 .git {
   width: 78%;
-  -moz-animation: git 2s ease;
-  -webkit-animation: git 2s ease;
 }
 .jira {
   width: 65%;
-  -moz-animation: jira 2s ease;
-  -webkit-animation: jira 2s ease;
 }
 .devops {
   width: 78%;
-  -moz-animation: devops 2s ease;
-  -webkit-animation: devops 2s ease;
-}
-
-@-moz-keyframes photoshop {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 60%;
-  }
-}
-@-moz-keyframes illustrator {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 55%;
-  }
-}
-@-moz-keyframes wordpress {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 50%;
-  }
-}
-@-moz-keyframes css {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 90%;
-  }
-}
-@-moz-keyframes html5 {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 80%;
-  }
-}
-@-moz-keyframes jquery {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 50%;
-  }
-}
-
-@-webkit-keyframes photoshop {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 60%;
-  }
-}
-@-webkit-keyframes illustrator {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 55%;
-  }
-}
-@-webkit-keyframes wordpress {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 50%;
-  }
-}
-@-webkit-keyframes css {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 90%;
-  }
-}
-@-webkit-keyframes html5 {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 80%;
-  }
-}
-@-webkit-keyframes jquery {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 50%;
-  }
 }

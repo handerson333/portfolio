@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
 import {
-  BrowserView,
-  MobileView,
-  isBrowser,
   isMobile
 } from "react-device-detect";
 
@@ -28,7 +25,7 @@ export default class About extends Component {
       <section id="about">
         <Row className="about">
           {!isMobile &&
-            <Col xs="3" className="profile-pic-wrapper">
+            <Col xs="4" className="profile-pic-wrapper">
               <img
                 className="profile-pic"
                 id="profile-pic"
@@ -37,7 +34,7 @@ export default class About extends Component {
               />
             </Col>
           }
-          <Col className="about-text" xs="10">
+          <Col className="about-text" xs="8">
             <h1>About Me</h1>
             <p>{resumeData.aboutme}</p>
 
