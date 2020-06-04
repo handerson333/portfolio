@@ -19,8 +19,8 @@ header .mobile-profile-pic{
 
 header {
   position: relative;
-  height: 800px;
-  min-height: 500px;
+  height: auto;
+  /* min-height: 500px; */
   width: 100%;
   background: #161415 url(../../images/mobileBackgrounds/mobile-mountain-background.jpg) no-repeat top center;
   background-size: cover !important;
@@ -58,10 +58,7 @@ header .social li a {
   color: #fff;
 }
 header .scrolldown a {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -29px;
+  margin: auto;
   color: #fff;
   display: block;
   height: 42px;
