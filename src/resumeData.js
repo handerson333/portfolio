@@ -20,7 +20,7 @@ let resumeData = {
     }
   ],
   aboutme:
-    "I am currently a software engineer looking for a full time position as a product owner. I plan on moving to Tampa, Florida as soon as this whole quarantine is finished. I'm guessing the first week of July!",
+    "I am currently a software engineer looking for a new full time position either in Tampa or remotely. I plan on moving to Tampa, Florida as soon as this whole quarantine is finished. I move the first weekend of July!",
   address: "Portland, OR USA",
   website: "haydenanderson.xyz",
   education: [
