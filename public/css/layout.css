@@ -477,7 +477,7 @@ call-to-action .button {
   text-align: left;
 }
 .flex-control-nav li {
-  margin: 0 12px;
+  margin: 0 2rem;
   display: inline-block;
   zoom: 1;
   *display: inline;
