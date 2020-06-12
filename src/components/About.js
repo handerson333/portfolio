@@ -11,22 +11,27 @@ export default class About extends Component {
       isDesktop: window.innerWidth > 960,
     };
   }
+  componentDidMount() {
+    setInterval(() => {
+      var imgElement = document.getElementById('profile-pic')
+      imgElement.src = 'images/profilepics/hayden (' + (Math.floor(Math.random() * 12) + 1) + ').jpg'
+    }
+      , 5000);
+  }
+
   render() {
     let resumeData = this.props.resumeData;
     let imgNum = Math.floor(Math.random() * 12) + 1;
-
-    // setInterval(()=>
-    //   {
-    //       var imgElement = document.getElementById('profile-pic')
-    //       imgElement.src = 'images/profilepics/hayden (' + (Math.floor(Math.random()*12) + 1) + ').jpg'
-    //   }
-    //   , 5000);
+    function changeImage() {
+      document.getElementById('profile-pic').src = 'images/profilepics/hayden (' + (Math.floor(Math.random() * 12) + 1) + ').jpg'
+    }
     return (
       <section id="about">
         <Row className="about">
           {!isMobile &&
             <Col xs="4" className="profile-pic-wrapper">
               <img
+                onClick={changeImage}
                 className="profile-pic"
                 id="profile-pic"
                 src={"images/profilepics/hayden (" + imgNum + ").jpg"}
