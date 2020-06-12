@@ -6,19 +6,13 @@ import {
 } from "react-device-detect";
 
 export default class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isDesktop: window.innerWidth < 960,
-    };
-  }
 
   render() {
     let resumeData = this.props.resumeData;
     let imgNum = Math.floor(Math.random() * 12) + 1;
     return (
       <React.Fragment>
-        <header id="home">
+        <section id="home">
           <Nav />
           {isMobile &&
             <div className="profile-pic-wrapper">
@@ -58,7 +52,7 @@ export default class Header extends Component {
               <i className="icon-down-circle"></i>
             </a>
           </Row>
-        </header>
+        </section>
       </React.Fragment>
     );
   }

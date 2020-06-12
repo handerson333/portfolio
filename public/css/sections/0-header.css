@@ -3,7 +3,7 @@
 /* ------------------------------------------------------------------ */
 
 
-header .mobile-profile-pic{
+#home .mobile-profile-pic{
   visibility: visible;
   display: inline-block;
   position: center;
@@ -17,10 +17,9 @@ header .mobile-profile-pic{
   overflow: hidden;
 }
 
-header {
+#home {
   position: relative;
-  height: 800px;
-  min-height: 500px;
+  min-height: auto !important;
   width: 100%;
   background: #161415 url(../../images/mobileBackgrounds/mobile-mountain-background.jpg) no-repeat top center;
   background-size: cover !important;
@@ -28,7 +27,7 @@ header {
   text-align: center;
   overflow: hidden;
 }
-header .profile-pic-wrapper {
+#home .profile-pic-wrapper {
   padding-top: 15%;
 }
 
@@ -45,37 +44,123 @@ header .profile-pic-wrapper {
   width: 80%;
 }
 
-header .social {
+#home .social {
   margin: 18px 0 24px 0;
   font-size: 36px;
   line-height: 36px;      
 }
-header .social li { 
+#home .social li { 
   display: inline-block;
   margin: 0 2rem; 
 }
-header .social li a {
+#home .social li a {
   color: #fff;
 }
-header .scrolldown a {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -29px;
+
+
+#home .scrolldown a {
+  margin: 0 auto 2rem;
   color: #fff;
   display: block;
-  height: 42px;
-  width: 42px;
   font-size: 42px;
-  line-height: 42px;
-  color: #fff;
   border-radius: 100%;
+
+  
 
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-header .scrolldown a:hover {
+#home .scrolldown a:hover {
   color: #11abb0;
+}
+
+
+@media only screen and (min-width: 961px){
+  #home {
+    position: relative;
+    /* height: 800px; */
+    min-height: 800px !important;
+    width: 100%;
+    background: #161415 url(../../images/header-background.jpg) no-repeat top center;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    text-align: center;
+    overflow: hidden;
+  }
+  .mobile-profile-pic{
+    visibility: hidden;
+  }
+  
+  
+  /* vertically center banner section */
+  #home:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  #home .banner {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 85%;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+  #home .banner-text {
+    width: 100%;
+  }
+  #home .banner-text h1 {
+    font: 90px/1.1em "opensans-bold", sans-serif;
+    color: #fff;
+    letter-spacing: -2px;
+    margin: 1em auto;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+  #home .banner-text h3 {
+    font: 18px/1.9em "librebaskerville-regular", serif;
+    margin: 0 auto;
+    width: 70%;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  #home .banner-text h3 span,
+  #home .banner-text h3 a {
+    color: #fff;
+  }
+  #home .banner-text hr {
+    width: 60%;
+    margin: 18px auto 24px;
+    border-color: #2f2d2e;
+    border-color: rgba(150, 150, 150, 0.1);
+  }
+  
+  /* header social links */
+  #home .social {
+    margin: 6rem 0;
+    padding: 0;
+    font-size: 30px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  #home .social li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0;
+  }
+  #home .social li a {
+    color: #fff;
+  }
+  #home .social li a:hover {
+    color: #11abb0;
+  }
+
+
+  #home .scrolldown {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    margin-left: -28px !important;
+  }
 }
