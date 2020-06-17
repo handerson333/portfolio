@@ -182,7 +182,6 @@
   margin: 0 12px;
   display: inline-block;
   zoom: 1;
-  *display: inline;
 }
 .flex-control-paging li a {
   width: 12px;
