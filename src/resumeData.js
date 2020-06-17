@@ -136,11 +136,11 @@ let resumeData = {
       imgurl: "/images/portfolio/modals/AllJoyn_Logo.jpg",
       url: "https://en.wikipedia.org/wiki/AllJoyn"
     },
-    // {
-    //   name: "project3",
-    //   description: "mobileapp",
-    //   imgurl: "images/portfolio/project2.png"
-    // },
+    {
+      name: "Sales Central",
+      description: "Multi-banner Customer Relationship Manager (CRM). Salespeople use this for managing customers and sales statistics.",
+      imgurl: "images/portfolio/sales.png"
+    },
     // {
     //   name: "project4",
     //   description: "mobileapp",
