@@ -139,7 +139,7 @@ let resumeData = {
     {
       name: "Sales Central",
       description: "Multi-banner Customer Relationship Manager (CRM). Salespeople use this for managing customers and sales statistics.",
-      imgurl: "images/portfolio/sales.png"
+      imgurl: "/images/portfolio/modals/Sales.png"
     },
     // {
     //   name: "project4",
