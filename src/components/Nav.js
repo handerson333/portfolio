@@ -20,7 +20,7 @@ export default class Nav extends Component {
 
 
           <div className="topnav">
-            <a href="#home" className="active">&nbsp;&nbsp;&nbsp;</a>
+            <button className="active">&nbsp;&nbsp;&nbsp;</button>
             <div id="myLinks">
               <Link to={"/#home"} onClick={this.toggleNav} className="smoothscroll">
                 Home
@@ -43,9 +43,9 @@ export default class Nav extends Component {
               {/* <Link to={`/blog`}>Blog</Link>
               <Link to={`/theHike/hike`}>The Hike</Link> */}
             </div>
-            <a href="javascript:void(0);" className="icon" onClick={this.toggleNav}>
+            <button className="icon" onClick={this.toggleNav}>
               <i className="fa fa-bars"></i>
-            </a>
+            </button>
           </div>
         }
         {!isMobile &&

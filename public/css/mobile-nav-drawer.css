@@ -7,35 +7,53 @@
       overflow: hidden;
       background-color: #333;
       position: fixed;
-      top: 0;
+      bottom: 0;
       right: 0;
       z-index: 1;
-      border-radius: 0% 0% 10% 10%;
     }
     
     .topnav #myLinks {
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      margin-top: -50%;
       display: none;
     }
-    
-    .topnav a.active {
+    .topnav #myLinks a {
+      color: white;
+      width: 100%;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 12px;
+      display: block;
+     
+    }
+    .topnav #myLinks a:last-child {
+      padding-bottom: 67%;
+    }
+
+
+
+    .topnav button.active {
        visibility: hidden;
        overflow: hidden;
     }
 
-    .topnav a {
+    .topnav button {
       color: white;
+      width: 100%;
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
       display: block;
     }
     
-    .topnav a.icon {
+    .topnav button.icon {
       background: black;
       display: block;
       position: absolute;
       right: 0;
-      top: 0;
+      bottom: 0;
     }
 
     
