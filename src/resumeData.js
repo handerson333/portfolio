@@ -20,8 +20,8 @@ let resumeData = {
     }
   ],
   aboutme:
-    "I am currently a software engineer looking for a new full time position either in Tampa or remotely. I plan on moving to Tampa, Florida as soon as this whole quarantine is finished. I move the first weekend of July!",
-  address: "Portland, OR USA",
+    "I am currently a Sr. Applications Developer for Air Culinaire Worldwide where I am head UX/UI Designer as well as lead front end engineer. My focus in Air Culinaire is on the internal applications to update, upgrade, and create a seemless experience for the employees. I am also creating custom and personal websites for clients in my own time.",
+  address: "Tampa, FL USA",
   website: "haydenanderson.xyz",
   education: [
     {
@@ -45,17 +45,28 @@ let resumeData = {
   ],
   work: [
     {
+      CompanyName: "Air Culinaire Worldwide",
+      specialization: "Sr. Applications Developer",
+      MonthOfLeaving: "Current",
+      YearOfLeaving: "",
+      Achievements: [
+        "Planning entire applications for a user experience order and menu as well as the internal employees customer experience for a ~$70 million business",
+        "Use Adobe XD to wireframe and mockup all internal applications to allow a more learnable employee experience",
+        "Develope and design front end for an order management and menu system",
+      ]
+    },
+    {
       CompanyName: "Rexel USA",
       specialization: "Software Engineer",
       MonthOfLeaving: "April",
       YearOfLeaving: "2020",
       Achievements: [
-        "Planning new features using work items using user stories and specified criteria to convey business requirements",
-        "Attending sprint planning meetings ensuring new features and found bugs are clear and concise",
-        "Working closely with development and UX teams to collaborate on user feedback and new feature requests",
-        "Implementing process changes, improving performance, maintenance, and employee satisfaction resulting in a gain of ~25% effort / sprint cycle",
-        "Ensuring logical new features and a bug-free experience for businesses and consumers utilizing a website with ~$350M annual revenue",
-        "Creating fully automated test suites for external e-commerce websites and internal sales applications using a POM framework"
+        "Planned new features using work items using user stories and specified criteria to convey business requirements",
+        "Attended sprint planning meetings ensuring new features and found bugs are clear and concise",
+        "Worked closely with development and UX teams to collaborate on user feedback and new feature requests",
+        "Implemented process changes, improving performance, maintenance, and employee satisfaction resulting in a gain of ~25% effort / sprint cycle",
+        "Ensured logical new features and a bug-free experience for businesses and consumers utilizing a website with ~$350M annual revenue",
+        "Created fully automated test suites for external e-commerce websites and internal sales applications using a POM framework"
       ]
     },
     {
